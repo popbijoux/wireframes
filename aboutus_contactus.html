@@ -2,49 +2,162 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Contact Us</title>
+<title>About Us</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 <style>
-     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    aside, article, section, header, footer, nav {
-	display: block;
-        }
-    
-        html, body {
-	margin: 0;
-	padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center
-            }
+/*FONT-FACE*/
+@font-face {
+	font-family:"League Spartan";
+	src:url("http://www.myfontfree.com/data/88/l/league-spartan/LeagueSpartan-Bold.otf");
+}
+
+aside, article, header, footer, nav {
+display: block;
+		}
+
+		html, body {
+margin: 0;
+padding: 0;
+font-family:"League Spartan";
+text-align: center
+				}
 html {
-	background: rgb(200, 200, 200);
+background: rgb(200, 200, 200);
 }
 body {
-	width: 924px;
-	background: rgb(240, 240, 240);
-	margin: 0 auto 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-     }
-    
-     }
-    
-    header {
-	background: rgb(150, 150, 150);
-	margin-bottom: 5px;
-        height: 50px;
-        
+width: 95%;
+background: rgb(240, 240, 240);
+margin: 0 auto 0;
+display:block;
+ }
+
+
+
+.headerbar {
+
+    width: 100%;
+    background: gray;
+		margin-bottom: 100px;
+
+    }
+
+.main {
+background: rgb(240, 240, 240);
+display: block;;
+flex-flow: row wrap;
+justify-content: space-around;;
+margin-bottom: 60px;
+margin-top: 50px;
+width: 100%;
+ z-index: -100;
+margin-left: auto;
+margin-right: auto;
+overflow: visible;
+
 }
-    
-    
-    header, h1 {
+
+
+
+h1 {
+
 	color: black;
-	text-align: center;
-	line-height: 1.5em;
-	text-transform: uppercase;
-	letter-spacing:.1em;
-	margin: 0;
+	font-size: 2em;
+	width: 100%;
+	padding-bottom: 20px;
+	padding-top:30px;
+
+
 }
+
+h2 {
+		font-family: 'Muli', sans-serif;
+		font-size: 1em;
+		color: gray;
+		margin-top: 10px;
+		text-transform: capitalize;
+}
+
+    .undershape {
+
+           width: 250px;
+           height: 250px;
+        background: rgb(190, 190, 190);
+  margin: auto;
+
+    }
+
+.box1 {
+	width: 30%;
+		  margin-top: 64px;
+}
+
+.box2 {
+	width: 30%;
+		  margin-top: 64px;
+}
+
+.box3 {
+	width: 30%;
+		  margin-top: 64px;
+}
+
+
+
+     .undershape1 {
+           width: 250px;
+           height: 250px;
+        background: rgb(190, 190, 190);
+
+        margin: auto;
+    }
+
+    .shape1 {
+           margin-top: 16px;
+           margin-bottom: -30px;
+           width: 100px;
+           height: 40px;
+           display: block;
+           background: rgb(160, 160, 160);
+           display: flex;
+           justify-content: center;
+           align-content: space-between;
+           margin: auto;
+    }
+
+    .shape2   {
+            width: 100px;
+            height: 100px;
+            display: inline-flex;
+            background: rgb(160, 160, 160);
+            -moz-border-radius: 50px;
+            -webkit-border-radius: 50px;
+            border-radius: 50px;
+            margin-top: 48px;
+            margin-bottom: 16px;
+
+}
+
+
+    .lines {
+        margin-top: 40px;
+    }
+     .line1 {
+        height: 16px;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 16px;
+        background: rgb(160, 160, 160);
+    }
+         .line {
+        height: 16px;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 16px;
+        background: rgb(220, 220, 220);
+    }
+
 
         footer {
 	background: rgb(150, 150, 150);
@@ -52,202 +165,300 @@ body {
 	font-size: 1em;
 	color: black;
 	padding: 0 2em;
-    height: 50px;
+            height: 50px;
 	clear: both;
 }
-    
 
+input[type=text] {
+width: 100%;
+padding: 12px 20px;
+margin: 12px 0;
+box-sizing: border-box;
+text-align: left;
+padding-top: 20px;
 
-
-
-#feedback-page {
-	text-align:center;
 }
 
-#form-main{
-	width:100%;
-	display: flex;
-	padding-top:0px;
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+		font-family:"League Spartan";
+		font-size: 1em;
+
 }
 
-#form-div {
-	background-color:rgba(72,72,72,0.4);
-	padding-left:35px;
-	padding-right:35px;
-	padding-top:35px;
-	padding-bottom:50px;
-	width: 450px;
-    margin-top:98px;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-     margin-bottom: 60px;
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
+input[type=submit]:hover {
+    background-color: #45a049;
 }
 
-.feedback-input {
-	color:#3c3c3c;
-	font-family: Helvetica, Arial, sans-serif;
-  font-weight:500;
-	font-size: 18px;
-	border-radius: 0;
-	line-height: 22px;
-	background-color: #fbfbfb;
-	padding: 13px 13px 13px 54px;
-	margin-bottom: 10px;
-	width:100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	box-sizing: border-box;
-  border: 3px solid rgba(0,0,0,0);
-}
 
-.feedback-input:focus{
-	background: #fff;
-	box-shadow: 0;
-	border: 3px solid #3498db;
-	color: #3498db;
-	outline: none;
-  padding: 13px 13px 13px 54px;
-}
 
-.focused{
-	color:#30aed6;
-	border:#30aed6 solid 3px;
-}
-
-/* Icons ---------------------------------- */
-#name{
-	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-	background-size: 30px 30px;
-	background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
-
-#name:focus{
-	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-	background-size: 30px 30px;
-	background-position: 8px 5px;
-  background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
-
-#email{
-	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-	background-size: 30px 30px;
-	background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
-
-#email:focus{
-	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-	background-size: 30px 30px;
-  background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
-
-#comment{
-	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
-	background-size: 30px 30px;
-	background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
 
 textarea {
-    width: 100%;
-    height: 150px;
-    line-height: 150%;
-    resize:vertical;
-}
-
-input:hover, textarea:hover,
-input:focus, textarea:focus {
-	background-color:white;
-}
-
-#button-blue{
-	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-	float:left;
+	margin: 32px 0;
 	width: 100%;
-	border: #fbfbfb solid 4px;
-	cursor:pointer;
-	background-color: #3498db;
-	color:white;
-	font-size:24px;
-	padding-top:22px;
-	padding-bottom:22px;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-  margin-top:-4px;
-  font-weight:700;
 }
 
-#button-blue:hover{
-	background-color: rgba(0,0,0,0);
-	color: #0493bd;
-}
-	
-.submit:hover {
-	color: #3498db;
-}
-	
-.ease {
-	width: 0px;
-	height: 74px;
-	background-color: #fbfbfb;
-	-webkit-transition: .3s ease;
-	-moz-transition: .3s ease;
-	-o-transition: .3s ease;
-	-ms-transition: .3s ease;
-	transition: .3s ease;
+form {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+
 }
 
-.submit:hover .ease{
-  width:100%;
-  background-color:white;
+
+/*MEDIA QUERIES*/
+
+
+/*500px*/
+/*1 IMG ONLY*/
+/*TURN 2 IMAGES INTO 1*/
+  @media only screen and (max-width: 500px) {
+
+
+
+
+            .cards.box2  {
+                margin-top: 0px;
+        }
+
+         .box3  {
+        display: none;
+        }
+
+       .box2  {
+        display: none;
+        }
+
+
+
+      img {
+
+    width: 70%;
+    height: auto;
+    margin: auto;
+
 }
 
-@media only screen and (max-width: 580px) {
-	#form-div{
-		left: 3%;
-		margin-right: 3%;
-		width: 88%;
-		margin-left: 0;
-		padding-left: 3%;
-		padding-right: 3%;
+    .cards:hover,.rightcard:hover {
+ width: 345px;
+        padding-top:80px;
+         height: 415px;
+          background: rgb(230, 230, 230);
+}
+
+
+      #barChartLines {
+	margin-top: 60px;
+          font-size: 10em;
+
 	}
+
+
+
+
+}
+
+    /*640px*/
+      @media only screen and (max-width: 570px) {
+
+
+
+
+		/*THIS IS THE "MAIN" MARGIN THAT GOES WITH THE RESPONSIVE MENU*/
+
+			.main {
+				margin-top: 150px
+
+}
+/*CHANGE IN THE TITLE SIZE THROUGH THE RESPONSIVE MENU*/
+h1  {
+font-size: 1.2em;
+margin-top: 20px;
+
+}
+
+
+		  }
+
+
+
+			@media only screen and (min-width: 571px) and (max-width: 913px) {
+
+
+				/*main margin is 100px*/
+
+				    .main {
+				      margin-top: 100px
+
+				      }
+
+				/*h1*/
+
+				        h1 {
+				          font-size: 1.6em;
+				    }
+
+
+
+  }
+
+	/*WIREFRAME MENU*/
+
+	ul {
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	    overflow: hidden;
+	    position:fixed
+	    width:100%;
+	    font-weight: 300;
+	        position: fixed;
+	        top: 0;
+					text-transform: uppercase;
+					font-family:"League Spartan";
+	}
+
+	li {
+	    float: left;
+
+	}
+
+	li a, .dropbtn {
+	    display: inline-block;
+	    color: black;
+	    text-align: center;
+	    font-size: 1.2em;
+	    padding: 13px 16px;
+	    text-decoration: none;
+
+	}
+
+	li a:hover, .dropdown:hover .dropbtn .dropdown-content {
+	    background-color: red;
+	}
+
+	li.dropdown {
+	    display: inline-block;
+
+	}
+
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    background: rgb(240, 240, 240);
+	    min-width: 100px;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index:1000;
+	    position:relative;
+	}
+
+	.dropdown-content a {
+	    color: black;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	    text-align: left;
+
+	}
+
+	.dropdown-content a:hover {background-color: red}
+
+	.dropdown:hover .dropdown-content {
+	    display: block;
+	}
+	/*END of css MENU*/
+
+
+
     </style>
 </head>
 <body>
-    <header>
-<h1>Contact Us</h1>
-</header>
-    <div id="form-main">
-  <div id="form-div">
-    <form class="form" id="form1">
-      
-      <p class="name">
-        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
-      </p>
-      
-      <p class="email">
-        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
-      </p>
-      
-      <p class="text">
-        <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
-      </p>
-      
-      
-      <div class="submit">
-        <input type="submit" value="SEND" id="button-blue"/>
-        <div class="ease"></div>
-      </div>
-    </form>
-  </div>
+	<!--MENU NAV BAR-->
+	<ul>
 
-   </body>
+	<li><a class="active" href="https://popbijoux.github.io/wireframes/ "class="page">My Portfolio</a></li>
+
+	<li class="dropdown">
+	<a href="https://popbijoux.github.io/wireframes/mygoals.html" class="dropbtn">My Goals</a>
+	<div class="dropdown-content">
+	<a href="https://popbijoux.github.io/wireframes/mygoals_goalone.html">Goal One</a>
+	<a href="https://popbijoux.github.io/wireframes/mygoals_goaltwo.html">Goal Two</a>
+	<a href="https://popbijoux.github.io/wireframes/mygoals_goalthree.html">Goal Three</a>
+	</div>
+	</li>
+
+	<li class="dropdown">
+	<a href="https://popbijoux.github.io/wireframes/mydeck.html" class="dropbtn">My Deck</a>
+	<div class="dropdown-content">
+	<a href="https://popbijoux.github.io/wireframes/mydeck_companyone.html">Company One</a>
+	<a href="https://popbijoux.github.io/wireframes/mydeck_companynews.html">Company News</a>
+	<a href="https://popbijoux.github.io/wireframes/mydeck_companyresearch.html">Company Research</a>
+	</div>
+	</li>
+
+
+
+
+	<li class="dropdown">
+	<a href="" class="dropbtn"> Content & News </a>
+	<div class="dropdown-content">
+	<a href="https://popbijoux.github.io/wireframes/news_contentandnews.html">Latest Financial News</a>
+	<a href="https://popbijoux.github.io/wireframes/news_bestpractices.html">Best Practices</a>
+	<a href="https://popbijoux.github.io/wireframes/news_blog.html">Our Blog</a>
+	</div>
+	</li>
+
+	<li class="dropdown">
+	<a href="https://popbijoux.github.io/wireframes/aboutus.html"class="dropbtn">About Us</a>
+	<div class="dropdown-content">
+	<a href="https://popbijoux.github.io/wireframes/aboutus_ourmission.html">Our Mission</a>
+	<a href="https://popbijoux.github.io/wireframes/aboutus_ourteam.html">Our Team</a>
+	<a href="https://popbijoux.github.io/wireframes/aboutus_contactus.html">Contact</a>
+	   </li>
+
+	<li><a href="https://popbijoux.github.io/wireframes/settings.html">Settings</a></li>
+
+
+	</ul>
+	<!--END MENU NAV BAR-->
+
+
+
+<div class="main">
+
+<div class="headerbar"><h1>CONTACT US</h1></div>
+
+	<form>
+
+		<label for="Name">Name:</label>
+		<input type="text" name="Name" id="Name" />
+
+		<label for="Email">Email:</label>
+		<input type="text" name="Email" id="Email" />
+
+		<label for="Email">Subject:</label>
+		<input type="text" name="Email" id="Email" />
+
+		<label for="Message">Message:</label><br />
+		<textarea name="Message" rows="10" cols="120" id="Message"></textarea>
+
+		<h2><input type="submit" value="Submit" /></h2>
+	</form>
+
+</div>
+
+
+
+
+
+
+<footer></footer>
+</body>
 </html>
