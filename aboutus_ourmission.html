@@ -2,59 +2,98 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Our Mission</title>
+<title>About Us</title>
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <style>
-     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <style>
-    aside, article, section, header, footer, nav {
-	display: block;
-        }
-    
-        html, body {
-	margin: 0;
-	padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center
-            }
+aside, article, header, footer, nav {
+display: block;
+		}
+
+		html, body {
+margin: 0;
+padding: 0;
+text-transform: uppercase;
+font-family:"League Spartan";
+text-align: center;
+
+				}
 html {
-	background: rgb(200, 200, 200);
+background: rgb(200, 200, 200);
 }
 body {
-	width: 924px;
-	background: rgb(240, 240, 240);
-	margin: 0 auto 2em;
-     }
-    
-    header {
-	background: rgb(150, 150, 150);
-	margin-bottom: 5px;
-        height: 50px;
-        
+width: 95%;
+background: rgb(240, 240, 240);
+margin: 0 auto 0;
+display:block;
+height: auto;
+text-transform: uppercase;
+font-family:"League Spartan";
+ }
+
+
+
+
+
+
+
+.headerbar {
+    margin-top: 0;
+    width: 100%;
+    background: gray;
+
+
     }
-    
-    header, h1 {
-	color: black;
-	text-align: center;
-	line-height: 1.5em;
-	text-transform: uppercase;
-	letter-spacing:.1em;
-	margin: 0;
+
+.main {
+background: rgb(240, 240, 240);
+display: flex;
+flex-flow: row wrap;
+justify-content: space-around;
+margin-bottom: 60px;
+margin-top: 40px;
+width: 90%;
+ z-index: -100;
+margin-left: auto;
+margin-right: auto;
+overflow: visible;
+text-transform: uppercase;
+font-family:"League Spartan";
+
 }
-    .col1 {
-	background: rgb(240, 240, 240);
-	height: 600px;
-	float: left
-	width: 924px;
-	padding: 20px;
-    }
+
+
+
+h1 {
+	color: black;
+	font-size: 2em;
+	width: 100%;
+	padding-bottom: 20px;
+	padding-top:30px;
+	text-transform: uppercase;
+	font-family:"League Spartan";
+
+
+
+}
+
+h2 {
+		font-family: 'Muli', sans-serif;
+		font-size: 1em;
+		color: gray;
+		margin-top: 10px;
+}
+
+
     .lines {
-        margin-top: 20%;
+        margin-top: 50px;
+				height: auto;
+				padding-top: 80px;
+				padding-bottom: 80px;
     }
      .line1 {
-        height: 16px;
+        height: 32px;
         width: 80%;
         margin: auto;
         margin-bottom: 16px;
@@ -77,6 +116,9 @@ body {
 	clear: both;
 }
 
+
+/*WIREFRAME MENU*/
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -87,7 +129,16 @@ ul {
     font-weight: 300;
         position: fixed;
         top: 0;
+				text-transform: uppercase;
+				font-family:"League Spartan";
 }
+
+ul * {
+	text-transform: uppercase;
+	font-family:"League Spartan";
+
+}
+
 
 li {
     float: left;
@@ -96,12 +147,13 @@ li {
 
 li a, .dropbtn {
     display: inline-block;
-    color: blue;
+    color: black;
     text-align: center;
-    font-size: 1.1em;
-    padding: 16px 16px;
+    font-size: 1.2em;
+    padding: 18px 16px;
     text-decoration: none;
-
+		text-transform: uppercase;
+		font-family:"League Spartan";
 
 }
 
@@ -120,16 +172,18 @@ li.dropdown {
     background: rgb(240, 240, 240);
     min-width: 100px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-           z-index:1000;
-  position:relative;
+    z-index:1000;
+    position:relative;
 }
 
 .dropdown-content a {
-    color: blue;
+    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
+		text-transform: uppercase;
+		font-family:"League Spartan";
 
 }
 
@@ -138,76 +192,168 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+/*END of css MENU*/
+
+
+
+/*MEDIA QUERIES*/
+
+
+/*500px*/
+/*1 IMG ONLY*/
+/*TURN 2 IMAGES INTO 1*/
+  @media only screen and (max-width: 500px) {
+
+
+}
+
+    /*640px*/
+      @media only screen and (max-width: 570px) {
+
+				.main {
+					margin-top: 150px
+
+    }
+
+		.cards{
+			margin-top: 4px;
+
+		}
+
+		.box1 {
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+
+		}
+
+
+		h1  {
+		font-size: 1.2em;
+		margin-top: 20px;
+
+		}
+
+		li a, .dropbtn {
+
+		    padding: 13px 16px;
+
+
+		}
+
+
+
+
+	}
+
+/*501-840px*/
+    @media only screen and (min-width: 571px) and (max-width: 913px) {
+
+
+				.main {
+					margin-top: 100px
+
+    }
+
+		h1 {
+			font-size: 1.6em;
+}
+
+li a, .dropbtn {
+
+		padding: 13px 16px;
+
+
+}
+
+
+
+
+  }
+
+
 
 
     </style>
 </head>
 <body>
-    <header>
-        <div class=nav></div>
-<h1>Our Mission</h1>
-</header>
-<ul>
 
-  <li><a class="active" href="http://uxxo-fyi.tumblr.com">Home</a></li>
+	<!--MENU NAV BAR-->
+	<ul>
 
-  <li class="dropdown">
-    <a href="http://uxxo-wireframes.tumblr.com/My_Goals_Web" class="dropbtn">My Goals</a>
-    <div class="dropdown-content">
-      <a href="http://uxxo-wireframes.tumblr.com/Goal1_Web">Goal One</a>
-      <a href="http://uxxo-wireframes.tumblr.com/Goal2_Web">Goal Two</a>
-      <a href="http://uxxo-wireframes.tumblr.com/Goal3_Web">Goal Three</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="http://uxxo-wireframes.tumblr.com/My_Deck_Web" class="dropbtn">My Deck</a>
-    <div class="dropdown-content">
-      <a href="http://uxxo-fyi.tumblr.com/projects_plusser">My Deck</a>
-      <a href="http://uxxo-wireframes.tumblr.com/Company_One">Company One</a>
-      <a href="http://uxxo-fyi.tumblr.com/projects_Homelys">Company News</a>
-      <a href="http://uxxo-wireframes.tumblr.com/Company_Research">Company Research</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="http://uxxo-wireframes.tumblr.com/Latest_News" class="dropbtn"> Content & News </a>
-    <div class="dropdown-content">
-      <a href="http://uxxo-fyi.tumblr.com/projects_plusser">Latest Financial News</a>
-      <a href="http://uxxo-wireframes.tumblr.com/Best_Practices">Best Practices</a>
-      <a href="http://uxxo-wireframes.tumblr.com/blog">Management Blog</a>
-    </div>
-  </li>
-            
-  <li class="dropdown">
-  <a href="http://uxxo-wireframes.tumblr.com/About_Us"class="dropbtn">About Us</a>
-       <div class="dropdown-content">
-      <a href="http://uxxo-wireframes.tumblr.com/Our_Mission">Our Mission</a>
-      <a href="http://uxxo-wireframes.tumblr.com/Our_Team">Our Team</a>
-        <a href="http://uxxo-wireframes.tumblr.com/contact_us">Contact</a>
-            </li>
+	<li><a class="active" href="https://popbijoux.github.io/wireframes/ "class="page">My Portfolio</a></li>
 
- 
-      <li><a href="http://uxxo-wireframes.tumblr.com/sttgs">Settings</a></li>
+	<li class="dropdown">
+	<a href="https://popbijoux.github.io/wireframes/mygoals.html" class="dropbtn">My Goals</a>
+	<div class="dropdown-content">
+	<a href="https://popbijoux.github.io/wireframes/mygoals_goalone.html">Goal One</a>
+	<a href="https://popbijoux.github.io/wireframes/mygoals_goaltwo.html">Goal Two</a>
+	<a href="https://popbijoux.github.io/wireframes/mygoals_goalthree.html">Goal Three</a>
+	</div>
+	</li>
+
+	<li class="dropdown">
+	<a href="https://popbijoux.github.io/wireframes/mydeck.html" class="dropbtn">My Deck</a>
+	<div class="dropdown-content">
+	<a href="https://popbijoux.github.io/wireframes/mydeck_companyone.html">Company One</a>
+	<a href="https://popbijoux.github.io/wireframes/mydeck_companynews.html">Company News</a>
+	<a href="https://popbijoux.github.io/wireframes/mydeck_companyresearch.html">Company Research</a>
+	</div>
+	</li>
 
 
-    </div>
-<section class="col1">
+
+
+	<li class="dropdown">
+	<a href="" class="dropbtn"> Content & News </a>
+	<div class="dropdown-content">
+	<a href="https://popbijoux.github.io/wireframes/news_contentandnews.html">Latest Financial News</a>
+	<a href="https://popbijoux.github.io/wireframes/news_bestpractices.html">Best Practices</a>
+	<a href="https://popbijoux.github.io/wireframes/news_blog.html">Our Blog</a>
+	</div>
+	</li>
+
+	<li class="dropdown">
+	<a href="https://popbijoux.github.io/wireframes/aboutus.html"class="dropbtn">About Us</a>
+	<div class="dropdown-content">
+	<a href="https://popbijoux.github.io/wireframes/aboutus_ourmission.html">Our Mission</a>
+	<a href="https://popbijoux.github.io/wireframes/aboutus_ourteam.html">Our Team</a>
+	<a href="https://popbijoux.github.io/wireframes/aboutus_contactus.html">Contact</a>
+	   </li>
+
+	<li><a href="https://popbijoux.github.io/wireframes/settings.html">Settings</a></li>
+
+
+	</ul>
+	<!--END MENU NAV BAR-->
+
+
+
+
+	<section class="main"></section>
+
+  <section class="headerbar"><h1>OUR MISSION</h1></section>
+
+
+
     <section class="lines">
+
     <div class="line1"></div>
     <div class="line"></div>
     <div class="line"></div>
     <div class="line"></div>
     <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-        </section>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+
+
 </section>
-<footer>Copyright stuff....</footer>
+
+
+<footer></footer>
 </body>
 </html>
