@@ -2,75 +2,118 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Our_Team</title>
+<title>About Us</title>
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <style>
-     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <style>
-    aside, article, section, header, footer, nav {
-	display: block;
-        }
-    
-        html, body {
-	margin: 0;
-	padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center
-            }
+aside, article, header, footer, nav {
+display: block;
+		}
+
+		html, body {
+margin: 0;
+padding: 0;
+font-family:"League Spartan";
+text-align: center;
+text-transform: uppercase;
+				}
 html {
-	background: rgb(200, 200, 200);
+background: rgb(200, 200, 200);
 }
 body {
-	width: 924px;
-	background: rgb(240, 240, 240);
-	margin: 0 auto 2em;
-     }
-    
-    header {
-	background: rgb(150, 150, 150);
-	margin-bottom: 5px;
-        height: 50px;
-        
+width: 95%;
+background: rgb(240, 240, 240);
+margin: 0 auto 0;
+display:block;
+ }
+
+
+
+
+
+.main {
+background: rgb(240, 240, 240);
+display: flex;
+flex-flow: row wrap;
+justify-content: space-around;
+margin-bottom: 60px;
+margin-top: 50px;
+width: 100%;
+ z-index: -100;
+margin-left: auto;
+margin-right: auto;
+overflow: visible;
+
 }
-    
-    
-    header, h1 {
-	color: black;
-	text-align: center;
-	line-height: 1.5em;
-	text-transform: uppercase;
-	letter-spacing:.1em;
-	margin: 0;
-        
+
+
+
+
+
+.headerbar {
+
+    width: 100%;
+    background: gray;
+		margin-bottom: 80px;
+
+
+    }
+
+
+
+		h1 {
+			color: black;
+			font-size: 2em;
+			width: 100%;
+			padding-bottom: 0px;
+			padding-top:0px;
+
+
+
+		}
+
+h2 {
+		font-family: 'Muli', sans-serif;
+		font-size: 1em;
+		color: gray;
+		margin-top: 10px;
 }
+
     .undershape {
-        margin-top: 96px;
+
            width: 250px;
            height: 250px;
-        margin-right: 16px;
-        margin-left: 6px;
-        
-
-        float: left;
-        
         background: rgb(190, 190, 190);
+  margin: auto;
+
     }
-    
+
+.box1 {
+	width: 30%;
+		  margin-top: 64px;
+}
+
+.box2 {
+	width: 30%;
+		  margin-top: 64px;
+}
+
+.box3 {
+	width: 30%;
+		  margin-top: 64px;
+}
+
+
+
      .undershape1 {
-        margin-top: 96px;
            width: 250px;
            height: 250px;
-        margin-right: 16px;
-         margin-left: 64px;
-        
-
-        float: left;
-        
         background: rgb(190, 190, 190);
+
+        margin: auto;
     }
- 
+
     .shape1 {
            margin-top: 16px;
            margin-bottom: -30px;
@@ -83,7 +126,7 @@ body {
            align-content: space-between;
            margin: auto;
     }
-   
+
     .shape2   {
             width: 100px;
             height: 100px;
@@ -94,21 +137,16 @@ body {
             border-radius: 50px;
             margin-top: 48px;
             margin-bottom: 16px;
-   
+
 }
 
-    .col1 {
-	background: rgb(240, 240, 240);
-	height: 600px;
-	float: left
-	width: 924px;
-	padding: 20px;
-    }
+
     .lines {
-        margin-top: 400px;
+        margin-top: 40px;
+				margin-bottom:80px;
     }
      .line1 {
-        height: 16px;
+        height: 32px;
         width: 90%;
         margin: auto;
         margin-bottom: 16px;
@@ -130,43 +168,316 @@ body {
             height: 50px;
 	clear: both;
 }
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position:fixed
+    width:100%;
+    font-weight: 300;
+        position: fixed;
+        top: 0;
+}
+
+li {
+    float: left;
+
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 13px 16px;
+    text-decoration: none;
+
+}
+
+li a:hover, .dropdown:hover .dropbtn .dropdown-content {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: rgb(240, 240, 240);
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1000;
+    position:relative;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+}
+
+.dropdown-content a:hover {background-color: red}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*MEDIA QUERIES*/
+
+
+/*500px*/
+/*1 IMG ONLY*/
+/*TURN 2 IMAGES INTO 1*/
+  @media only screen and (max-width: 500px) {
+
+		/*main margin is 150px*/
+		    .main {
+		      margin-top: 150px;
+		        }
+
+		/*h1*/
+
+		        h1  {
+		        font-size: 1.2em;
+		        margin-top: 20px;
+
+		        }
+
+
+						.headerbar {
+
+								width: 100%;
+								background: gray;
+								margin-bottom: 0px;
+
+
+								}
+
+
+
+            .cards.box2  {
+                margin-top: 0px;
+        }
+
+         .box3  {
+        display: none;
+        }
+
+       .box2  {
+        display: none;
+        }
+
+
+
+      img {
+
+    width: 70%;
+    height: auto;
+    margin: auto;
+
+}
+
+    .cards:hover,.rightcard:hover {
+ width: 345px;
+        padding-top:80px;
+         height: 415px;
+          background: rgb(230, 230, 230);
+}
+
+
+      #barChartLines {
+	margin-top: 60px;
+          font-size: 10em;
+
+	}
+
+
+
+
+}
+
+    /*640px*/
+      @media only screen and (max-width: 570px) {
+
+				.undershape {
+
+
+
+		    }
+
+				.box2  {
+			 display: none;
+			 }
+
+         .box3  {
+        display: none;
+        }
+
+				.main {
+					margin-top: 150px
+
+    }
+
+		.cards{
+			margin-top: 4px;
+
+		}
+
+		.box1 {
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+
+		}
+
+
+		h1 {
+			font-size: 1.6em;
+			margin-top: 30px;
+
+
+    }
+
+
+
+		  }
+
+/*501-840px*/
+    @media only screen and (min-width: 571px) and (max-width: 913px) {
+
+         .box3  {
+        display: none;
+        }
+
+				/*main margin is 100px*/
+
+				    .main {
+				      margin-top: 100px
+
+				      }
+
+				/*h1*/
+
+				        h1 {
+				          font-size: 1.6em;
+				    }
+
+						.headerbar {
+
+								width: 100%;
+								background: gray;
+								margin-bottom: 20px;
+
+
+								}
+
+
+
+  }
+
+
     </style>
 </head>
 <body>
-    <header>
-        <div class=nav></div>
-<h1>Best Practices</h1>
-</header>
-    <section class="icon">
+	<!--MENU NAV BAR-->
+	<ul>
+
+	<li><a class="active" href="https://popbijoux.github.io/wireframes/ "class="page">My Portfolio</a></li>
+
+	<li class="dropdown">
+	<a href="https://popbijoux.github.io/wireframes/mygoals.html" class="dropbtn">My Goals</a>
+	<div class="dropdown-content">
+	<a href="https://popbijoux.github.io/wireframes/mygoals_goalone.html">Goal One</a>
+	<a href="https://popbijoux.github.io/wireframes/mygoals_goaltwo.html">Goal Two</a>
+	<a href="https://popbijoux.github.io/wireframes/mygoals_goalthree.html">Goal Three</a>
+	</div>
+	</li>
+
+	<li class="dropdown">
+	<a href="https://popbijoux.github.io/wireframes/mydeck.html" class="dropbtn">My Deck</a>
+	<div class="dropdown-content">
+	<a href="https://popbijoux.github.io/wireframes/mydeck_companyone.html">Company One</a>
+	<a href="https://popbijoux.github.io/wireframes/mydeck_companynews.html">Company News</a>
+	<a href="https://popbijoux.github.io/wireframes/mydeck_companyresearch.html">Company Research</a>
+	</div>
+	</li>
+
+
+
+
+	<li class="dropdown">
+	<a href="" class="dropbtn"> Content & News </a>
+	<div class="dropdown-content">
+	<a href="https://popbijoux.github.io/wireframes/news_contentandnews.html">Latest Financial News</a>
+	<a href="https://popbijoux.github.io/wireframes/news_bestpractices.html">Best Practices</a>
+	<a href="https://popbijoux.github.io/wireframes/news_blog.html">Our Blog</a>
+	</div>
+	</li>
+
+	<li class="dropdown">
+	<a href="https://popbijoux.github.io/wireframes/aboutus.html"class="dropbtn">About Us</a>
+	<div class="dropdown-content">
+	<a href="https://popbijoux.github.io/wireframes/aboutus_ourmission.html">Our Mission</a>
+	<a href="https://popbijoux.github.io/wireframes/aboutus_ourteam.html">Our Team</a>
+	<a href="https://popbijoux.github.io/wireframes/aboutus_contactus.html">Contact</a>
+	   </li>
+
+	<li><a href="https://popbijoux.github.io/wireframes/settings.html">Settings</a></li>
+
+
+	</ul>
+	<!--END MENU NAV BAR-->
+
+
+
+<div class="main">
+	<div class="headerbar"><h1>OUR TEAM</h1></div>
+    <section class="box1">
    <div class="undershape1">
     <div class="shape2"></div>
     <div class="shape1"></div>
-         </div>
-          <section class="icon">
+         </div></section>
+          <section class="box2">
    <div class="undershape">
     <div class="shape2"></div>
     <div class="shape1"></div>
-         </div>
-                <section class="icon">
+         </div></section>
+                <section class="box3">
    <div class="undershape">
     <div class="shape2"></div>
     <div class="shape1"></div>
-         </div>
-  
-  
-  
-    
-        </section>
-<section class="col1">
+         </div></section>
+</div>
+
+
+
+
+
     <section class="lines">
     <div class="line1"></div>
     <div class="line"></div>
     <div class="line"></div>
     <div class="line"></div>
     <div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
 
-        </section>
+
+
 </section>
-<footer>Copyright stuff....</footer>
+
+<footer></footer>
 </body>
 </html>
